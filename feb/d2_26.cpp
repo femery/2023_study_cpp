@@ -32,7 +32,7 @@ void Box::set(double len, double bre, double hei) {
     height=hei;
 }
 
-int main(){
+int main0226(){
     Box Box1;
     Box Box2;
     Box Box3;
@@ -57,4 +57,15 @@ int main(){
 
     return 0;
 
+}
+
+# include <string>
+template <typename T>
+inline T const& Max (T const&a, T const&b){
+    return a<b ?b:a;
+}
+int main0226_1(){
+    int i=39;
+    int j=20;
+    cout<<"Max(i,j)"<<Max(i,j)<<endl;
 }
